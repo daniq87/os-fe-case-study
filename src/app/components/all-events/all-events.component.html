@@ -1,0 +1,4 @@
+<div *ngFor="let item of events | keyvalue">
+  {{item.key}}
+  <app-event *ngFor="let event of item.value" [event]="event"></app-event>
+</div>

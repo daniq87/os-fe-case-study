@@ -1,0 +1,10 @@
+<div class="flex-container">
+  <div class="flex-item1">{{event.getStartTime}}</div>
+  <div class="flex-item2">
+    <div class="flex-item3">{{event.name}}</div>
+    <div class="flex-item3">{{event.city}}</div>
+  </div>
+  <div class="flex-item1" *ngIf="event.isFree">Free</div>
+  <div class="flex-item1">Button</div>
+</div>
+
